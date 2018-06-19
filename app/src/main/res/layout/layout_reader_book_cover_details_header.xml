@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="14dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/reader_book_cover_comic_synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        style="@style/Reader.Text.size_a_color_a"
+        android:text="@string/reader_book_cover_comic_synopsis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/reader_book_cover_synopsis_content_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/reader_book_cover_comic_synopsis"
+        >
+
+        <TextView
+            android:id="@+id/reader_book_cover_tv_synopsis_content"
+            android:layout_width="match_parent"
+            android:text="@string/reader_book_cover_synopsis_content"
+            android:maxLines="3"
+            style="@style/Reader.Text.size_f_color_b"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:text="同类作品"
+        style="@style/Reader.Text.size_a_color_a"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/reader_book_cover_synopsis_content_parent" />
+
+    <TextView
+        android:id="@+id/reader_book_cover_details_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="更多"
+        android:drawableRight="@drawable/reader_book_cover_click_to_show_more"
+        style="@style/Reader.Text.size_f_color_c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        />
+</android.support.constraint.ConstraintLayout>

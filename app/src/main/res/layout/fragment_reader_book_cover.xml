@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_1"
+        android:background="#fff"
+        android:fadingEdge="none"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+         <android.support.design.widget.CollapsingToolbarLayout
+              android:layout_width="match_parent"
+              android:layout_height="290dp"
+
+              app:layout_scrollFlags="scroll|exitUntilCollapsed"
+              app:titleEnabled="false">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="209dp"
+                  android:background="@mipmap/default_list_top_bg" />
+
+
+
+              <android.support.constraint.ConstraintLayout
+                  android:id="@+id/ddddd"
+                  android:layout_width="match_parent"
+                  android:layout_height="117dp"
+                  android:layout_gravity="bottom"
+                  android:layout_marginBottom="4dp"
+                  android:visibility="visible"
+                  android:background="@drawable/reader_book_cover_header_bookinfo_bg">
+
+                  <TextView
+                      android:id="@+id/reader_book_cover_tv_title"
+                      style="@style/Reader.Text.size_h_color_a"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="27dp"
+                      android:layout_marginStart="27dp"
+
+                      android:layout_marginTop="24dp"
+                      android:text="阿尔达斯的传说"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+
+                  <TextView
+                      android:id="@+id/reader_book_cover_tv_author"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="28dp"
+                      android:layout_marginStart="28dp"
+                      android:layout_marginTop="8dp"
+                      style="@style/Reader.Text.size_f_color_a"
+                      android:text="@string/reader_book_cover_author"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toBottomOf="@+id/reader_book_cover_tv_title" />
+
+                  <TextView
+                      android:id="@+id/reader_book_cover_tv_label"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginStart="10dp"
+                      style="@style/Reader.Text.size_f_color_a"
+                      android:text="@string/reader_book_cover_labels"
+                      app:layout_constraintStart_toEndOf="@+id/reader_book_cover_tv_author"
+                      app:layout_constraintTop_toTopOf="@+id/reader_book_cover_tv_author" />
+
+                  <TextView
+                      android:id="@+id/reader_book_cover_likes"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="28dp"
+                      android:layout_marginStart="28dp"
+                      style="@style/Reader.Text.size_f_color_c"
+                      android:layout_marginTop="8dp"
+                      android:drawableLeft="@drawable/reader_book_cover_likes"
+                      android:drawablePadding="5dp"
+                      android:drawableStart="@drawable/reader_book_cover_likes"
+                      android:text="@string/reader_book_cover_likes"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toBottomOf="@+id/reader_book_cover_tv_author" />
+
+                  <TextView
+                      android:id="@+id/reader_book_cover_favorites"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="7dp"
+                      android:layout_marginStart="7dp"
+                      style="@style/Reader.Text.size_f_color_c"
+                      android:drawableLeft="@drawable/reader_book_cover_favorities"
+                      android:drawablePadding="5dp"
+                      android:drawableStart="@drawable/reader_book_cover_favorities"
+                      android:text="@string/reader_book_cover_labels"
+                      app:layout_constraintStart_toEndOf="@+id/reader_book_cover_likes"
+                      app:layout_constraintTop_toTopOf="@+id/reader_book_cover_likes" />
+
+                  <CheckBox
+                      android:id="@+id/reader_book_cover_btn_favorites"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="23dp"
+                      android:layout_marginRight="23dp"
+                      android:layout_marginTop="16dp"
+                      android:drawablePadding="-5dp"
+                      android:button="@null"
+                      style="@style/Reader.Text.size_f_color_a"
+                      android:drawableTop="@drawable/reader_book_favorites_selector"
+                      android:gravity="center"
+                      android:text="收藏"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+
+
+              </android.support.constraint.ConstraintLayout>
+              <android.support.v7.widget.Toolbar
+                  android:id="@+id/tool_bar"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+
+                  app:layout_collapseMode="pin" />
+
+
+
+          </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <RadioGroup
+            android:id="@+id/reader_book_cover_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="4dp">
+
+            <RadioButton
+                android:id="@+id/reader_book_cover_tab_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:drawablePadding="7dp"
+                android:drawableBottom="@drawable/reader_book_cover_tab_selector"
+                android:text="@string/reader_book_cover_tab_details"
+                android:textColor="@color/reader_book_cover_tab_text_color_selector"
+                android:textSize="@dimen/text_size_comic_a" />
+
+            <RadioButton
+               style="@style/Reader.ine_single_comic"
+                android:layout_width="0.5dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <RadioButton
+                android:id="@+id/reader_book_cover_tab_catalog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="7dp"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableBottom="@drawable/reader_book_cover_tab_selector"
+                android:text="@string/reader_book_cover_tab_catalog"
+                android:textColor="@color/reader_book_cover_tab_text_color_selector"
+                android:textSize="@dimen/text_size_comic_a" />
+        </RadioGroup>
+
+
+        <ImageView
+            style="@style/Reader.ine_single_comic"
+            android:layout_marginBottom="7dp"
+            />
+
+      <android.support.constraint.ConstraintLayout
+           android:layout_width="match_parent"
+           android:id="@+id/reader_book_cover_details_container"
+           app:layout_scrollFlags="scroll"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/reader_book_cover_comic_synopsis"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="21dp"
+               style="@style/Reader.Text.size_a_color_a"
+               android:text="@string/reader_book_cover_comic_synopsis"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <RelativeLayout
+               android:id="@+id/reader_book_cover_synopsis_content_parent"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:layout_marginEnd="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="14dp"
+               app:layout_constraintTop_toBottomOf="@+id/reader_book_cover_comic_synopsis"
+               >
+
+               <TextView
+                   android:id="@+id/reader_book_cover_tv_synopsis_content"
+                   android:layout_width="match_parent"
+                   style="@style/Reader.Text.size_f_color_b"
+                   android:layout_height="wrap_content" />
+           </RelativeLayout>
+
+       </android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+   <include layout="@layout/content_scrolling" />
+
+
+</android.support.design.widget.CoordinatorLayout>

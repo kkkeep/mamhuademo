@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--多用于页面标题、栏目标题、按钮默认颜色-->
+    <color name="text_color_comic_a">#333333</color>
+    <!--多用于小喇叭、主页面tab分类、按钮按下颜色-->
+    <color name="text_color_comic_b">#666666</color>
+    <!--多用于作者名、书籍详情-->
+    <color name="text_color_comic_c">#999999</color>
+    <!--多用于提示性默认文本、按钮置灰颜色-->
+    <color name="text_color_comic_d">#cccccc</color>
+    <!-- 多用于今日更新赞数等-->
+    <color name="text_color_comic_e">#ffffff</color>
+    <!-- 多用于提醒用户点击、按钮默认颜色-->
+    <color name="text_color_comic_h">#FFC946</color>
+    <!-- 多用于按钮按下颜色-->
+    <color name="text_color_comic_k">#E5B53F</color>
+    <!--多用于下载失败,重新记载-->
+    <color name="text_color_comic_f">#f44b3e</color>
+    <!--多用于按钮描边-->
+    <color name="text_color_comic_g">#ececec</color>
+    <!--统一背景色-->
+    <color name="bg_global_comic_color">#ffffff</color>
+    <color name="bg_global_color_comic_a">#f7f7f7</color>
+
+    <!--item点击效果-->
+    <color name="item_selector_comic_a">#f3f3f3</color>
+
+    <!--导航栏-->
+    <color name="navigation_bg_comic_color">#ffffff</color>
+    <color name="navigation_edit_finish_text_comic_color">#333333</color>
+    <!--<color name="colorPrimary">#FF4081</color>-->
+    <!--<color name="colorPrimaryDark">@color/navigation_bg_comic_color</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!--单线分隔-->
+    <color name="line_single_comic">#ececec</color>
+    <!--模块分隔线-->
+    <color name="line__aplit_comic">#f7f7f7</color>
+
+</resources>

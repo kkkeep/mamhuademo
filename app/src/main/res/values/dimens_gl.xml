@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 统一规范字体大小 -->
+    <dimen name="text_size_comic_a">16.0sp</dimen>
+    <dimen name="text_size_comic_b">15sp</dimen>
+    <dimen name="text_size_comic_c">14sp</dimen>
+    <dimen name="text_size_comic_d">13sp</dimen>
+    <dimen name="text_size_comic_e">12sp</dimen>
+    <dimen name="text_size_comic_f">11sp</dimen>
+    <dimen name="text_size_comic_g">27sp</dimen>
+    <dimen name="text_size_comic_h">17sp</dimen>
+    <dimen name="text_size_comic_i">10sp</dimen>
+
+
+
+    <dimen name="bottom_tab_layout_height">44dp</dimen>
+
+</resources>

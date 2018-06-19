@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">true
+        <!--android 4.4 中新增的，用于设置状态颜色半透明，4.4 之后必须设置为false，不然状态半透明，而且设置状态颜色无效,详情产考：https://developer.android.com/about/versions/android-4.4-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item><!--设置底部虚拟导航（back,home,menu）半半透明-->
+       <!-- <item name="colorPrimaryDark">@android:color/transparent</item>-->
+        <item name="colorPrimaryDark">@android:color/transparent</item><!--如果不设置 qndroid:statusBarColor ，那么状态谈默认使用此颜色，如果设置了qndroid:statusBarColor 那么使用该属性指定的颜色 -->
+       <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item><!--android 5.0 才支持，让系统状态栏的颜色变为暗色-->
+    </style>
+</resources>
